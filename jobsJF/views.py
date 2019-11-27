@@ -5,5 +5,4 @@ from .models import Job
 
 def home(request):
     jobsObjs = Job.objects
-    print('jobsObjs: ', jobsObjs)
     return render(request, 'jobsJF/home.html' , {'jobs': jobsObjs})
