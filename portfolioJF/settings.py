@@ -135,6 +135,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media') #media is the folder. git ignore ha
 MEDIA_URL = '/coolstuff/' #this is to access the media, the images we store on apps.py
 
 try:
-    from local_settings import *
+    from .local_settings import *
 except ImportError:
     pass
