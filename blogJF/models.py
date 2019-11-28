@@ -1,5 +1,6 @@
 from django.db import models
 import django.utils
+
 # 1. Create a Blog model
 # title
 # pub_date
