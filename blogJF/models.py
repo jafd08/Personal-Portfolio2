@@ -1,4 +1,5 @@
 from django.db import models
+import django.utils
 import datetime
 # 1. Create a Blog model
 # title
@@ -13,7 +14,7 @@ import datetime
 
 class Blog(models.Model):  # this model.Model lest us create a class and save it on database
     title = models.CharField(max_length=50)
-    pub_date = models.DateTimeField(default=datetime.datetime.now())
+    pub_date = models.DateTimeField(default=django.utils.timezone.now)
     body = models.TextField()
     image = models.ImageField(upload_to='img/')
 
