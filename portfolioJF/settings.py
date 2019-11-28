@@ -132,7 +132,7 @@ STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media') #media is the folder. git ignore has this as ignored
 
-MEDIA_URL = '/coolstuff/' #this is to access the media, the images we store on apps.py
+MEDIA_URL = '/media/' #this is to access the media, the images we store on apps.py
 
 try:
     from .local_settings import *
